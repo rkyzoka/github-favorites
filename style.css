@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+
+  --primary-color: #6fd2fb;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+#app {
+  max-width: 500px;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.search {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search div {
+  display: flex;
+  align-items: center;
+}
+
+.search h1 {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+
+.search input {
+  padding: 0.5rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 0.3rem 0 0 0.3rem;
+}
+
+.search button {
+  padding: 0.5rem 0.8rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 0 0.3rem 0.3rem 0;
+  background-color: var(--primary-color);
+
+  cursor: pointer;
+}
+
+.search button:hover {
+  filter: brightness(1.1);
+}
+
+table {
+  width: 100%;
+  margin-top: 5rem;
+  text-align: left;
+  border-collapse: collapse;
+
+  box-shadow: 0 1rem 2rem -1rem rgba(0, 0, 0, 0.3);
+}
+
+thead th:first-child {
+  border-radius: 0.4rem 0 0 0;
+}
+
+thead th:last-child {
+  border-radius: 0 0.4rem 0 0;
+}
+
+thead th {
+  font-weight: 500;
+  padding: 1.5rem;
+  background-color: var(--primary-color);
+}
+
+table * {
+  font-size: 1.4rem;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #dedede;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #edefef;
+}
+
+.user {
+  padding: 1.5rem;
+}
+
+.user a {
+  color: black;
+  text-decoration: none;
+}
+
+.user p {
+  font-weight: 700;
+}
+
+.user img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.user {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.repositories,
+.followers {
+  text-align: center;
+}
+
+tbody button {
+  color: red;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0.5rem;
+}
